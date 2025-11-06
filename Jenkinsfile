@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     APP_DIR = '/home/ubuntu/nodeapp'
-    REMOTE_HOST = 'ubuntu@<your-ec2-ip>'
+    REMOTE_HOST = 'ubuntu@65.2.74.79'
     SSH_CRED = 'cc-lab8'   // Jenkins SSH credentials ID
   }
 
