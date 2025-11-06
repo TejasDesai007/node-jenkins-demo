@@ -33,15 +33,15 @@ pipeline {
         }
 
         stage('Deploy') {
-            steps {
-                echo 'Deploying the application...'
-                // Example: deploy locally or to EC2
-                sh '''
-                mkdir -p /var/www/node-jenkins-demo
-                cp -r * /var/www/node-jenkins-demo/
-                '''
-            }
-        }
+    steps {
+        echo 'Deploying the application...'
+        sh '''
+        mkdir -p /var/lib/jenkins/deploy/node-jenkins-demo
+        cp -r * /var/lib/jenkins/deploy/node-jenkins-demo/
+        '''
+    }
+}
+
     }
 
     post {
